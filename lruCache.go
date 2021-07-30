@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -45,12 +44,4 @@ func cacheLRU(input []string) string {
 	res := strings.Join(result, "")
 
 	return res
-}
-
-func main() {
-	//A-B-A-C-A -> B-C-A
-	cacheInput := []string{"A", "B", "A", "C", "A"}
-	cacheOutput := cacheLRU(cacheInput)
-
-	fmt.Println(cacheOutput)
 }
